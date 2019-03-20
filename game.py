@@ -1,17 +1,20 @@
-import welcome
-import end
-import story_factory
-import character_creator
-import step_engine
+import plot.welcome
+import plot.end
+import plot.story_factory
+import character.creator
+import engine.step_handler
+
+def play_step(step, hero):
+  step_type = step.get('type')
+  if step_type == 'monster':
+    engine.step_handler.fight(hero, step)
+  if step_type == 'trophy':
+    engine.step_handler.pickup(hero, step)
 
 def start():
-  welcome.show()
-  character = character_creator.new()
-  story = story_factory.generate()
+  plot.welcome.show()
+  hero = character.creator.new()
+  story = plot.story_factory.generate()
   for step in story:
-    step_type = step.get('type')
-    if step_type == 'monster':
-      step_engine.fight(character, step)
-    if step_type == 'trophy':
-      step_engine.pickup(character, step)
-  end.show()
+    play_step(step, hero)
+  plot.end.show()
