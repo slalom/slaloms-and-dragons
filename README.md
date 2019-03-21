@@ -1,6 +1,5 @@
 # Slaloms and Dragons
 
-# TODO: Update readme
 ### Prereqs
 
 - Python 3.6.5+
