@@ -5,7 +5,7 @@ level_dict = {}
 # Attributes description
 class Attribute ():
   def __init__(self, level, exp, level_dict):
-	  #   level 
+	  # level 
     self.level = 0
     # exp
     self.exp = 0
