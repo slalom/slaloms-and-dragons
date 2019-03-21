@@ -3,7 +3,7 @@ import plot.end
 import plot.story_factory
 import character.creator
 import engine.step_handler
-import Npc 
+import npc 
 
 def play_step(step, hero):
   step_type = step.get('type')
