@@ -1,5 +1,5 @@
 
-class Npc: 
+class npc: 
     """
     creates a class of non-player characters 
 

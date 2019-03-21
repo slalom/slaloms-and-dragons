@@ -12,7 +12,7 @@ def play_step(step, hero):
   if step_type == 'trophy':
     engine.step_handler.pickup(hero, step)
   if step_type == 'npc': 
-    mary = Npc.Npc(step.get('name'), step.get('npc_class'), step.get('greeting')) 
+    mary = npc.npc(step.get('name'), step.get('npc_class'), step.get('greeting')) 
     mary.meet()  
 
   
