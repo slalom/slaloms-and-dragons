@@ -1,4 +1,4 @@
-class ability ():
+class Ability ():
   def __init__(self, ID, name, description):
     self.ID = ID
     self.name = name
