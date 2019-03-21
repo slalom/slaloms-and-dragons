@@ -20,5 +20,5 @@ Run `make lint`  to conform to the PEP 8 style guide.
 - Create virtual environment on Mac OS (Assuming you have already installed Python3)
     - python3 -m venv <name of environment> ``` python3 -m venv venv ```
 - How to run a program if you are on Windows platform
-    - upgrade pip ``` python3 -m pip install --upgrade pip
+    - upgrade pip ``` python3 -m pip install --upgrade pip ```
     - run ``` pipenv run python go.py ```
