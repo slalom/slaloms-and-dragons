@@ -22,6 +22,10 @@ class Character:
         else:
             print(f'You were defeated by {monster_name}')
 
+    def pickup(self, trophy):
+        print('Sweet!')
+        # add to inventory
+
 #character = Character(test_character)
 #print("Character Name:", character.name)
 #print("Character race:", character.race)
