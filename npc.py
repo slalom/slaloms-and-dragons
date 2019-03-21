@@ -10,7 +10,13 @@ class Npc:
         self.greeting = greeting 
 
     def meet(self): 
-        print(self.greeting)
+        # print(self.greeting) 
+        answer = input(self.greeting)
+        print(answer) 
+        if answer == 'YES': 
+            print('Wonderful!')
+        else: 
+            print('whatevs.')
 
 
 
