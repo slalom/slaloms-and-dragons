@@ -1,6 +1,6 @@
 # Slaloms and Dragons
 
-
+# TODO: Update readme
 ### Prereqs
 
 - Python 3.6.5+
@@ -21,4 +21,5 @@ Run `make lint`  to conform to the PEP 8 style guide.
     - python3 -m venv <name of environment> ``` python3 -m venv venv ```
 - How to run a program if you are on Windows platform
     - upgrade pip ``` python3 -m pip install --upgrade pip ```
+    - install pipenv ``` pip install pipenv ```
     - run ``` pipenv run python go.py ```
