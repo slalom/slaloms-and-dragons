@@ -9,12 +9,15 @@ import npc
 def play_step(step, hero):
     step_type = step.get('type')
     if step_type == 'monster':
-        engine.step_handler.fight(hero, step)
+        monster = step['monster']
+        engine.step_handler.fight(hero, monster)
     if step_type == 'trophy':
-        engine.step_handler.pickup(hero, step)
+        trophy = step['trophy']
+        engine.step_handler.pickup(hero, trophy)
     if step_type == 'npc':
-        mary = npc.npc(step.get('name'), step.get('npc_class'),
-                       step.get('greeting'))
+        npm_spec = step['npc']
+        mary = npc.npc(npm_spec['name'], npm_spec['npc_class'],
+                       npm_spec['greeting'])
         mary.meet()
 
 
