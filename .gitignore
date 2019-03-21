@@ -104,3 +104,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# developer personal notes
+notes.txt
+.DS_Store
