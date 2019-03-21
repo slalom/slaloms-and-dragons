@@ -7,7 +7,7 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-pycodestyle = "*"
+autopep8 = "*"
 
 [requires]
 python_version = "3.6"
