@@ -4,7 +4,7 @@
 ### Prereqs
 
 - Python 3.6.5+
-- pipenv
+- pipenv (setup `pipenv` (https://pypi.org/project/pipenv/) )
 
 ### Running
 
