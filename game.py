@@ -10,7 +10,7 @@ def play_step(step, hero):
     step_type = step.get('type')
     if step_type == 'monster':
         monster = step['monster']
-        engine.step_handler.fight(hero, monster)
+        hero.fight(monster)
     if step_type == 'trophy':
         trophy = step['trophy']
         engine.step_handler.pickup(hero, trophy)
