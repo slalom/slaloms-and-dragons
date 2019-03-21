@@ -4,7 +4,7 @@ level_dict = {}
 
 
 # Attributes description
-class Attribute ():
+class attribute ():
     def __init__(self, level, exp, level_dict):
         self.level = 0  # level
         self.exp = 0   # exp
@@ -15,6 +15,6 @@ class Attribute ():
         self.abilities = []
 
 
-def make_attribute(attribute):
-    attribute = Attribute(level, exp, level_dict)
-    return attribute
+def make_attribute():
+    att = attribute(level, exp, level_dict)
+    return att
