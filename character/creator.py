@@ -1,2 +1,3 @@
 def new():
-  return
+  print("Select your character!")
+  return 
