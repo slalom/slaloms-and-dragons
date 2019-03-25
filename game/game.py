@@ -4,6 +4,7 @@ import game.plot.story_factory as story_factory
 import game.character.creator as character_creator
 import game.npc as npc
 import game.engine.wait as wait
+import game.engine.battle as battle
 
 
 def play_step(step, hero):
@@ -13,7 +14,7 @@ def play_step(step, hero):
         monster = step['monster']
         print(
             f'You encounter a monster! It is a {monster["name"]} with a strength of {monster["strength"]}')
-        hero.fight(monster)
+        battle.fight(hero, monster)
     if step_type == 'trophy':
         trophy = step['trophy']
         print(f'You found something! Ahhh! It is the {trophy["name"]}!')
