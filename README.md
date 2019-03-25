@@ -10,6 +10,10 @@
 1. `pipenv install`
 2. `make run`
 
+### Testing
+
+`make test`
+
 ### Styling
 using `autopep8` (https://pypi.org/project/autopep8/) to automatically format Python code to conform to the PEP 8 style guide. 
 
