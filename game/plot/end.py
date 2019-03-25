@@ -1,3 +1,3 @@
 def show():
-  print()
-  print('You win')
+    print()
+    print('You win')

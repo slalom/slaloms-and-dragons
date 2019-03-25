@@ -2,6 +2,7 @@
 
 import random
 
+
 class Character:
     def __init__(self, character):
         self.name = character["name"]
@@ -11,10 +12,10 @@ class Character:
         self.dexterity = character["dexterity"]
         self.constitution = character["constitution"]
         self.hitpoints = character["hitpoints"]
-    
+
     def fight(self, monster):
-        hero_score = self.strength + random.randint(1,6)
-        monster_score = monster['strength'] + random.randint(1,6)
+        hero_score = self.strength + random.randint(1, 6)
+        monster_score = monster['strength'] + random.randint(1, 6)
         monster_name = monster['name']
 
         if hero_score > monster_score:
