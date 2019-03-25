@@ -1,4 +1,4 @@
-import user_input
+import game.user_input as user_input
 
 
 def ask_for_selection():

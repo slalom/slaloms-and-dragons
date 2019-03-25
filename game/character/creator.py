@@ -1,8 +1,8 @@
-import character.Character
+import game.character.character as character
 
 def new():
   print("Select your character!")
-  hero = character.Character.Character({'name': 'Guido',
+  hero = character.Character({'name': 'Guido',
                                         'race': 'Halfling', 
                                         'gender':'male', 
                                         'strength':4, 

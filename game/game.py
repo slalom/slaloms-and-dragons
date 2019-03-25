@@ -1,8 +1,8 @@
-import plot.welcome
-import plot.end
-import plot.story_factory
-import character.creator
-import npc
+import game.plot.welcome as welcome
+import game.plot.end as end
+import game.plot.story_factory as story_factory
+import game.character.creator as character_creator
+import game.npc as npc
 
 
 def play_step(step, hero):
@@ -26,9 +26,9 @@ def play_step(step, hero):
 
 
 def start():
-    plot.welcome.show()
-    hero = character.creator.new()
-    story = plot.story_factory.generate()
+    welcome.show()
+    hero = character_creator.new()
+    story = story_factory.generate()
     for step in story:
         play_step(step, hero)
-    plot.end.show()
+    end.show()

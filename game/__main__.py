@@ -1,5 +1,5 @@
-import menu
-import game
+import game.menu as menu
+import game.game as game
 
 selection = menu.ask_for_selection()
 
