@@ -1,6 +1,6 @@
 def generate():
     return [{'type': 'monster',
-             'monster': {'name': 'chupacabra',
+             'monster': {'name': 'Chupacabra',
                          'strength': 5}},
             {'type': 'trophy',
              'trophy': {'name': 'The Sword of Damocles',

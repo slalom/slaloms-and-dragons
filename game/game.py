@@ -3,6 +3,7 @@ import game.plot.end as end
 import game.plot.story_factory as story_factory
 import game.character.creator as character_creator
 import game.npc as npc
+import game.engine.wait as wait
 
 
 def play_step(step, hero):
@@ -30,5 +31,6 @@ def start():
     hero = character_creator.new()
     story = story_factory.generate()
     for step in story:
+        wait.wait_with_animation()
         play_step(step, hero)
     end.show()
