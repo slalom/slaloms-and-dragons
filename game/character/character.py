@@ -13,17 +13,19 @@ def create_character():
     valid_gender = ["Male", "Female", "Other"]
     character["name"] = input("Please input your adventurer's name:")
     while character["race"] not in valid_race:
-        character["race"] = input("Please input your race 'Human, Elf, or Dwarf':")
+        character["race"] = input(
+            "Please input your race 'Human, Elf, or Dwarf':")
         if character["race"] not in valid_race:
             print("Your options are 'Human, Elf, or Dwarf'")
     while character["gender"] not in valid_gender:
-        character["gender"] = input("Please input your gender 'Male, Female, or Other':")
+        character["gender"] = input(
+            "Please input your gender 'Male, Female, or Other':")
         if character["gender"] not in valid_gender:
             print("Your options are 'Male, Female, or Other'")
     print()
     print("Rolling ability scores")
     # "\r" takes the cursor to the beginning of the line
-    simulate_pause = "/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\| "
+    simulate_pause = r"/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\| "
     for i in simulate_pause:
         print("\r", i, end="")
         time.sleep(.04)
@@ -76,5 +78,3 @@ class Character:
 
 # adventurer = Character(create_character())
 # adventurer.print_character()
-
-
