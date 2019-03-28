@@ -6,24 +6,20 @@ from examples import custom_style_2
 
 questions = [
     {
-        'type': 'checkbox',
+        'type': 'list',
         'qmark': '🐉 ⚔️ ',
         'message': 'Select a choice',
         'name': 'option',
         'choices': [
-            Separator('= Play a game ='),
             {
                 'name': 'New Game',
-                'checked': True
             },
             {
                 'name': 'Continue from where you left..'
             },
-            Separator('= Help ='),
             {
                 'name': 'How to play?'
             },
-            Separator('= Highscores ='),
             {
                 'name': 'Highscores'
             },
@@ -37,14 +33,7 @@ questions = [
 def get():
     user_input = '0'
     answer = prompt(questions, style=custom_style_2)
-    if len(answer['option']) >= 2:
-        print('OOPS.. you can only select one option')
-        return
-    elif len(answer['option']) == 0:
-        print('You forgot to select an option')
-        return
-    else:
-        if answer['option'][0] == 'New Game':
-            user_input = '1'
-        return user_input
+    if answer['option'] == 'New Game':
+        user_input = '1'
+    return user_input
 
