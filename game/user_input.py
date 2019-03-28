@@ -34,6 +34,6 @@ questions = [
 def get():
     user_input = '0'
     answer = prompt(questions, style=custom_style_3)
-    if answer['option'] == 'New Game':
+    if len(answer) > 0 and answer['option'] == 'New Game':
         user_input = '1'
     return user_input
