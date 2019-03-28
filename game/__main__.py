@@ -9,7 +9,7 @@ from colorama import Fore, Back, Style
 
 color = Fore.MAGENTA
 font_bold = Style.BRIGHT
-result = pyfiglet.figlet_format("SLALOMS & DRAGONS")
+result = pyfiglet.figlet_format("S L A L O M S  &  D R A G O N S", font="mini")
 print(color + font_bold + result)
 
 animation = emoji.emojize(color + font_bold +
