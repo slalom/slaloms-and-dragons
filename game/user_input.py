@@ -29,12 +29,9 @@ questions = [
             {
                 'name': 'Top Player'
             }
-        ],
-        'validate': lambda answer: 'You must choose at least one option.'
-        if len(answer) >= 2 else True
+        ]
     }
 ]
-
 
 def get():
     user_input = '0'
@@ -42,7 +39,11 @@ def get():
     if len(answer['option']) >= 2:
         print('OOPS.. you can only select one option')
         return
-    if answer['option'][0] == 'New Game':
-        user_input = '1'
-    return user_input
-    # return '1'
+    elif len(answer['option']) == 0:
+        print('You forgot to select an option')
+        return
+    else:
+        if answer['option'][0] == 'New Game':
+            user_input = '1'
+        return user_input
+
