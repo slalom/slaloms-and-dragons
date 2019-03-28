@@ -9,7 +9,7 @@ verify_ssl = true
 autopep8 = "*"
 emoji = "*"
 pyfiglet = "*"
-colored = "*"
+colorama = "*"
 
 [requires]
 python_version = "3.6"

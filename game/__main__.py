@@ -4,24 +4,23 @@ import emoji
 import sys
 import time
 import pyfiglet
-from colored import fg, bg, attr
+from colorama import Fore, Back, Style
 
 
-color = fg('orchid')
-reset = attr('reset')
-bold = attr('bold')
-result = pyfiglet.figlet_format("SLALOM & DRAGONS")
-print(color + result + reset)
+color = Fore.MAGENTA
+font_bold = Style.BRIGHT
+result = pyfiglet.figlet_format("SLALOMS & DRAGONS")
+print(color + font_bold + result)
 
-animation = emoji.emojize(
-    "%s%sLet's play SLALOM & DRAGONS%s :dragon:" %
-    (color, bold, reset))
+animation = emoji.emojize(color + font_bold +
+                          "Let's play SLALOMS & DRAGONS :dragon:")
 
 for i in animation:
     time.sleep(0.1)
     sys.stdout.write(i)
     sys.stdout.flush()
 print("\n")
+print(Style.RESET_ALL)
 
 selection = menu.ask_for_selection()
 
