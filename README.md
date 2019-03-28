@@ -22,3 +22,6 @@ Run `make lint`  to conform to the PEP 8 style guide.
 ### Tips
 - Create virtual environment on Mac OS (Assuming you have already installed Python3)
     - python3 -m venv <name of environment> ``` python3 -m venv venv ```
+
+### Logo
+![alt text](https://github.com/slalom/slaloms-and-dragons/blob/master/logo.png)
