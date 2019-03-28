@@ -13,7 +13,8 @@ questions = [
         'choices': [
             Separator('= Play a game ='),
             {
-                'name': 'New Game'
+                'name': 'New Game',
+                'checked': True
             },
             {
                 'name': 'Continue from where you left..'
