@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 autopep8 = "*"
+emoji = "*"
+pyfiglet = "*"
+colorama = "*"
 
 [requires]
 python_version = "3.6"

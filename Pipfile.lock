@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b55a9921eb9091433b5ed465c8b899e2bcd31d68043bcfdf229ad0ea1d89974d"
+            "sha256": "52545a0c07543aa12fdb2f1fe3345cd7b4690f1ace82d111541b3e60ac7592bc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,12 +23,36 @@
             "index": "pypi",
             "version": "==1.4.3"
         },
+        "colorama": {
+            "hashes": [
+                "sha256:05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d",
+                "sha256:f8ac84de7840f5b9c4e3347b3c1eaa50f7e49c2b07596221daec5edaabbd7c48"
+            ],
+            "index": "pypi",
+            "version": "==0.4.1"
+        },
+        "emoji": {
+            "hashes": [
+                "sha256:1e959336dafc7a5ed2c0256ee587bbd38a7187d772141f0b5ba42de9e08599a8",
+                "sha256:a9e9c08be9907c0042212c86dfbea0f61f78e9897d4df41a1d6307017763ad3e"
+            ],
+            "index": "pypi",
+            "version": "==0.5.1"
+        },
         "pycodestyle": {
             "hashes": [
                 "sha256:95a2219d12372f05704562a14ec30bc76b05a5b297b21a5dfe3f6fac3491ae56",
                 "sha256:e40a936c9a450ad81df37f549d676d127b1b66000a6c500caa2b085bc0ca976c"
             ],
             "version": "==2.5.0"
+        },
+        "pyfiglet": {
+            "hashes": [
+                "sha256:c6c2321755d09267b438ec7b936825a4910fec696292139e664ca8670e103639",
+                "sha256:d555bcea17fbeaf70eaefa48bb119352487e629c9b56f30f383e2c62dd67a01c"
+            ],
+            "index": "pypi",
+            "version": "==0.8.post1"
         }
     },
     "develop": {}
