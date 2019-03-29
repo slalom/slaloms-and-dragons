@@ -24,7 +24,7 @@ print(Style.RESET_ALL)
 
 selection = menu.ask_for_selection()
 
-if selection != '1':
+if selection['option'] != 'New Game':
     print('Beep boop')
 else:
     game.start()
