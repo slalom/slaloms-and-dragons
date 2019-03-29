@@ -1,6 +1,5 @@
 import game.character.character as character
 
-
 def new():
     print("Select your character!")
     hero = character.Character({'name': 'Guido',
