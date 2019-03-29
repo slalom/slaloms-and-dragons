@@ -33,12 +33,12 @@ def play_step(step, hero):
 
 def start():
     welcome.show()
+    
     hero = character_creator.new()
+    hero.print_character()
+    ability_track = ability.get_ability(hero)
+
     story = story_factory.generate()
-    new_character = character.create_character()
-    character_instance = character.Character(new_character)
-    character_instance.print_character()
-    ability_track = ability.get_ability(new_character)
     for step in story:
         wait.wait_with_animation()
         play_step(step, hero)
