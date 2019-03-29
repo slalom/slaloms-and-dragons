@@ -1,9 +1,5 @@
-
+import game.tools as tools
 class npc:
-    """
-    creates a class of non-player characters
-
-    """
 
     def __init__(self, name, npc_class, greeting):
         self.name = name
@@ -11,10 +7,9 @@ class npc:
         self.greeting = greeting
 
     def meet(self):
-        # print(self.greeting)
-        answer = input(self.greeting)
-        print(answer)
-        if answer == 'YES':
+
+        answer = tools.show_picker([{'name': 'YES'}, {'name': 'NO'}])
+        if answer['option'] == 'YES':
             print('Wonderful!')
         else:
             print('whatevs.')
