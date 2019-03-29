@@ -27,5 +27,6 @@ questions = [
     }
 ]
 
+
 def ask_for_selection():
     return PyInquirer.prompt(questions, style=examples.custom_style_3)
