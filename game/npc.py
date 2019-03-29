@@ -7,7 +7,7 @@ class npc:
         self.greeting = greeting
 
     def meet(self):
-
+        print(self.greeting)
         answer = tools.show_picker(['YES', 'NO'])
         if answer == 'YES':
             print('Wonderful!')
