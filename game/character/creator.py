@@ -2,6 +2,7 @@ import random
 import time
 import game.character.character as character
 import game.tools as tools
+import game.engine.wait as wait
 
 
 def new():
@@ -17,10 +18,8 @@ def new():
     print()
     print("Rolling ability scores")
     # "\r" takes the cursor to the beginning of the line
-    simulate_pause = r"/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\|/\| "
-    for i in simulate_pause:
-        print("\r", i, end="")
-        time.sleep(.04)
+    
+    wait.quick_spin()
     print()
     properties["strength"] = random.randint(3, 18)
     properties["dexterity"] = random.randint(3, 18)
