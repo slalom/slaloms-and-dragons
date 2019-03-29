@@ -40,6 +40,6 @@ def start():
 
     story = story_factory.generate()
     for step in story:
-        wait.wait_with_animation()
+        wait.step_wait()
         play_step(step, hero)
     end.show()
