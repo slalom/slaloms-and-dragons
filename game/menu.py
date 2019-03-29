@@ -1,21 +1,11 @@
 import game.tools as tools
 
 menu = [
-    {
-        'name': 'New Game',
-    },
-    {
-        'name': 'Continue from where you left..'
-    },
-    {
-        'name': 'How to play?'
-    },
-    {
-        'name': 'Highscores'
-    },
-    {
-        'name': 'Top Player'
-    }
+    'New Game',
+    'Continue from where you left..',
+    'How to play?',
+    'Highscores',
+    'Top Player'
 ]
 
 

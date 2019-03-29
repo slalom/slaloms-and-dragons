@@ -9,12 +9,10 @@ def new():
     properties["name"] = input("Please input your adventurer's name:")
 
     print('Select your race')
-    race = tools.show_picker([{'name': 'Human'}, {'name': 'Elf'}, {'name': 'Dwarf'}])
-    properties['race'] = race['option']
+    properties['race'] = tools.show_picker(['Human', 'Elf', 'Dwarf'])
     
     print('Select your gender')
-    race = tools.show_picker([{'name': 'Male'}, {'name': 'Female'}, {'name': 'Other'}])
-    properties['gender'] = race['option']
+    properties['gender'] = tools.show_picker(['Male', 'Female', 'Other'])
 
     print()
     print("Rolling ability scores")

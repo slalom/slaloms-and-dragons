@@ -8,8 +8,8 @@ class npc:
 
     def meet(self):
 
-        answer = tools.show_picker([{'name': 'YES'}, {'name': 'NO'}])
-        if answer['option'] == 'YES':
+        answer = tools.show_picker(['YES', 'NO'])
+        if answer == 'YES':
             print('Wonderful!')
         else:
             print('whatevs.')

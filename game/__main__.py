@@ -6,7 +6,7 @@ animations.show_intro()
 
 selection = menu.ask_for_selection()
 
-if selection['option'] != 'New Game':
+if selection != 'New Game':
     print('Beep boop')
 else:
     game.start()
