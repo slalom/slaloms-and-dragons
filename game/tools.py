@@ -11,7 +11,7 @@ def show_picker(options):
         'name': 'option'
     }
 
-    config['choices'] = [{'name':option} for option in options]
+    config['choices'] = [{'name': option} for option in options]
 
     pick = PyInquirer.prompt([config], style=examples.custom_style_3)
     return pick['option']

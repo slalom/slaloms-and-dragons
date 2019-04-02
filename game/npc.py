@@ -1,4 +1,6 @@
 import game.tools as tools
+
+
 class npc:
 
     def __init__(self, name, npc_class, greeting):

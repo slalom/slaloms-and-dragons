@@ -1,5 +1,6 @@
 import game.engine.dice as dice
 
+
 def fight(hero, monster):
     input('Hit [ENTER] to roll a die')
     hero_roll = dice.roll()

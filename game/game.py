@@ -33,7 +33,7 @@ def play_step(step, hero):
 
 def start():
     welcome.show()
-    
+
     hero = character_creator.new()
     hero.print_character()
     ability_track = ability.get_ability(hero)
