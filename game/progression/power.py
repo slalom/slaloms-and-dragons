@@ -1,3 +1,6 @@
+import random
+
+
 class Power:
 
     # Dictionary with powers and descriptions
@@ -12,6 +15,8 @@ class Power:
         2: "Ability to talk to Dragpns",
         3: "I have ultra instinct level perception"}
 
-
     def GetPower():
-        pass
+
+        power = powers[random.randint(0, len(powers))]
+        sp = special_power[random.randint(0, len(special_power))]
+        return (power, sp)
