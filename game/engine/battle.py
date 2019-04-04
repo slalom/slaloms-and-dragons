@@ -17,3 +17,38 @@ def fight(hero, monster):
     else:
         print(f'You were defeated by {monster["name"]}')
         return False 
+
+
+def threeRolls():
+    roll_sum = 0
+    print("To get through DEATH cave you must roll 3 times and get 12 or more.")
+    input('Hit [ENTER] to roll a die')
+    roll_1 = dice.roll()
+    print(f'You rolled {roll_1}')
+    roll_sum += roll_1
+
+    input('Hit [ENTER] to roll a die')
+    roll_2 = dice.roll()
+    print(f'You rolled {roll_2}')
+    roll_sum += roll_2
+
+    input('Hit [ENTER] to roll a die')
+    roll_3 = dice.roll()
+    print(f'You rolled {roll_3}')
+    roll_sum += roll_3
+
+    if roll_sum >= 12:
+        print('You have successfully crossed through DEATH cave.')
+    else:
+        print('You were defeated by DEATH cave')
+
+def even_rolls():
+    print("To get through mountain, you must roll even.")
+    input('Hit [ENTER] to roll a die')
+    roll = dice.roll()
+    print('You rolled {roll}')
+    
+    if roll % 2 == 0:
+        print('You have successfully climbed Zagros Montain.')
+    else:
+        print('You were defeated by Zagros Mountain')

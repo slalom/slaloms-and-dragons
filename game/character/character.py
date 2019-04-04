@@ -32,14 +32,11 @@ class Character:
 
     def pickup(self, trophy):
         print('Sweet!')
-<<<<<<< HEAD
         return True 
-=======
 
     def add_inventory(self, item):
         self.inventory.append(item)
 
->>>>>>> 4471e1b0fc1b6116f3a495201457e416ed60fa6c
         # add to inventory
 
     def __str__(self):

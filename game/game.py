@@ -8,12 +8,12 @@ import game.engine.battle as battle
 import game.character.character as character
 import game.progression.ability as ability
 
-
 def play_step(step, hero):
     print()
     print('Lets begin ')
     print()
     step_type = step.get('type')
+
     if step_type == 'monster':
         monster = step['monster']
         print(
@@ -29,6 +29,16 @@ def play_step(step, hero):
         mary = npc.npc(npm_spec['name'], npm_spec['npc_class'],
                        npm_spec['greeting'])
         return mary.meet()
+
+    if step_type == 'mountain':
+        mtn = step.get('mountain')
+        print(mtn["greeting"])
+        battle.even_rolls()
+
+    if step_type == 'cave':
+        cave = step.get('cave')
+        print(cave["greeting"])
+        battle.threeRolls()
 
 
 def start():
