@@ -24,3 +24,6 @@ def quick_spin():
     for i in wait_symbol:
         print("\r", i, end="")
         time.sleep(.04)
+
+def just_wait(): 
+    time.sleep(1.4)

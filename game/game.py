@@ -33,12 +33,13 @@ def play_step(step, hero):
     if step_type == 'mountain':
         mtn = step.get('mountain')
         print(mtn["greeting"])
-        battle.even_rolls()
+        return battle.even_rolls() 
+
 
     if step_type == 'cave':
         cave = step.get('cave')
         print(cave["greeting"])
-        battle.threeRolls()
+        return battle.threeRolls()
 
 
 def start():
