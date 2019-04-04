@@ -11,6 +11,7 @@ emoji = "*"
 pyfiglet = "*"
 colorama = "*"
 pyinquirer = "*"
+asciimatics = "*"
 
 [requires]
 python_version = "3.6"

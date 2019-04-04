@@ -30,6 +30,7 @@ class Character:
 
     def pickup(self, trophy):
         print('Sweet!')
+        return True 
         # add to inventory
 
     def __str__(self):

@@ -12,6 +12,8 @@ def fight(hero, monster):
     monster_score = monster['strength'] + monster_roll
 
     if hero_score > monster_score:
-        print(f'You defeated {monster["name"]}')
+        print(f'You defeated {monster["name"]}') 
+        return True 
     else:
         print(f'You were defeated by {monster["name"]}')
+        return False 

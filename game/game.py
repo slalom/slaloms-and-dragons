@@ -18,17 +18,17 @@ def play_step(step, hero):
         monster = step['monster']
         print(
             f'You encounter a monster! It is a {monster["name"]} with a strength of {monster["strength"]}')
-        battle.fight(hero, monster)
+        return battle.fight(hero, monster)
     if step_type == 'trophy':
         trophy = step['trophy']
         print(f'You found something! Ahhh! It is the {trophy["name"]}!')
-        hero.pickup(trophy)
+        return hero.pickup(trophy)
     if step_type == 'npc':
         npm_spec = step['npc']
         print('You see someone in the shadows...')
         mary = npc.npc(npm_spec['name'], npm_spec['npc_class'],
                        npm_spec['greeting'])
-        mary.meet()
+        return mary.meet()
 
 
 def start():
@@ -39,7 +39,11 @@ def start():
     ability_track = ability.get_ability(hero)
 
     story = story_factory.generate()
+    won = True 
     for step in story:
         wait.step_wait()
-        play_step(step, hero)
-    end.show()
+        result = play_step(step, hero)
+        if not result: 
+            won = False 
+            break 
+    end.show(win=won)
