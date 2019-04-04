@@ -25,5 +25,6 @@ def quick_spin():
         print("\r", i, end="")
         time.sleep(.04)
 
-def just_wait(): 
+
+def just_wait():
     time.sleep(1)

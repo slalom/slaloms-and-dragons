@@ -1,13 +1,14 @@
-import game.story.game_over as game_over 
+import game.story.game_over as game_over
 from colorama import Fore, Back, Style
-import emoji 
-import sys 
-import time 
+import emoji
+import sys
+import time
+
 
 def show(win=True):
-    if win: 
+    if win:
         print('\n🔥🔥 You Win 🔥🔥')
-    else: 
+    else:
         color = Fore.RED
         font_bold = Style.BRIGHT
         death = 'AAAAAAAAAAHAHHHHHHHHHAHAAARRRRRRRRRRRRRGRRGGGGGGGGRHHHHHHHHHHHH'
@@ -19,4 +20,4 @@ def show(win=True):
         print('\n')
         print(Style.RESET_ALL)
 
-        game_over.play_game_over() 
+        game_over.play_game_over()

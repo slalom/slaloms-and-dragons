@@ -8,6 +8,7 @@ import game.engine.battle as battle
 import game.character.character as character
 import game.progression.ability as ability
 
+
 def play_step(step, hero):
     print()
     print('Lets begin ')
@@ -33,8 +34,7 @@ def play_step(step, hero):
     if step_type == 'mountain':
         mtn = step.get('mountain')
         print(mtn["greeting"])
-        return battle.even_rolls() 
-
+        return battle.even_rolls()
 
     if step_type == 'cave':
         cave = step.get('cave')
@@ -50,11 +50,11 @@ def start():
     ability_track = ability.get_ability(hero)
 
     story = story_factory.generate()
-    won = True 
+    won = True
     for step in story:
         wait.step_wait()
         result = play_step(step, hero)
-        if not result: 
-            won = False 
-            break 
+        if not result:
+            won = False
+            break
     end.show(win=won)

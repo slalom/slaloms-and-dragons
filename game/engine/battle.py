@@ -1,6 +1,7 @@
 import game.engine.dice as dice
 import game.engine.wait as wait
 
+
 def fight(hero, monster):
     input('Hit [ENTER] to roll a die')
     hero_roll = dice.roll()
@@ -12,12 +13,12 @@ def fight(hero, monster):
     monster_score = monster['strength'] + monster_roll
 
     if hero_score > monster_score:
-        print(f'You defeated {monster["name"]}') 
-        return True 
+        print(f'You defeated {monster["name"]}')
+        return True
     else:
         print(f'You were defeated by {monster["name"]}')
         wait.just_wait()
-        return False 
+        return False
 
 
 def threeRolls():
@@ -40,22 +41,23 @@ def threeRolls():
 
     if roll_sum >= 12:
         print('You have successfully crossed through DEATH cave.')
-        return True 
+        return True
     else:
         print('You were defeated by DEATH cave')
         wait.just_wait()
-        return False 
+        return False
+
 
 def even_rolls():
     print("To get through mountain, you must roll even.")
     input('Hit [ENTER] to roll a die')
     roll = dice.roll()
     print(f'You rolled {roll}')
-    
+
     if roll % 2 == 0:
         print('You have successfully climbed Zagros Montain.')
-        return True 
+        return True
     else:
         print('You were defeated by Zagros Mountain')
         wait.just_wait()
-        return False 
+        return False

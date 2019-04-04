@@ -32,7 +32,7 @@ class Character:
 
     def pickup(self, trophy):
         print('Sweet!')
-        return True 
+        return True
 
     def add_inventory(self, item):
         self.inventory.append(item)

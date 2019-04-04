@@ -37,20 +37,20 @@ def game_over(screen):
               colour=Screen.COLOUR_BLACK,
               speed=1,
               start_frame=70),
-        
+
     ]
     scenes.append(Scene(effects, 100))
 
     screen.play(scenes, stop_on_resize=True, repeat=False)
 
 
-def play_game_over():  
+def play_game_over():
     while True:
         try:
             Screen.wrapper(game_over)
             sys.exit(0)
         except ResizeScreenError:
-            pass    
+            pass
 
 
 # if __name__ == "__main__":
