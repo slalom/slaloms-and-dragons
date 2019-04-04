@@ -1,4 +1,4 @@
-# test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20}
+##test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20, "inventory": []}
 
 
 class Character:
@@ -13,6 +13,7 @@ class Character:
         self.dexterity = character["dexterity"]
         self.constitution = character["constitution"]
         self.hitpoints = character["hitpoints"]
+        self.inventory = character["inventory"]
 
     def print_character(self):
         '''
@@ -27,10 +28,18 @@ class Character:
         print("Dexterity:", self.dexterity)
         print("Constitution:", self.constitution)
         print("Hitpoints:", self.hitpoints)
+        print("inventory:", self.inventory)
 
     def pickup(self, trophy):
         print('Sweet!')
+<<<<<<< HEAD
         return True 
+=======
+
+    def add_inventory(self, item):
+        self.inventory.append(item)
+
+>>>>>>> 4471e1b0fc1b6116f3a495201457e416ed60fa6c
         # add to inventory
 
     def __str__(self):
