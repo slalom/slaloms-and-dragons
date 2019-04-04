@@ -1,3 +1,6 @@
+from .power import Power
+
+
 powers = []
 special_power = ""
 
@@ -9,6 +12,9 @@ def get_ability(character):
 
 
 def get_powers(character):
+    print(Power.powers[character.])
+
+
     if character.race == "Human":
         powers = ["Sword", "Knife"]
         special_power = "I can speak to dragons"
