@@ -17,7 +17,7 @@ def show_intro():
     animation = emoji.emojize(color + font_bold + subtitle)
 
     for i in animation:
-        time.sleep(0.1)
+        time.sleep(0.03)
         sys.stdout.write(i)
         sys.stdout.flush()
     print('\n')

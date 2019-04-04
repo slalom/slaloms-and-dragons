@@ -26,4 +26,4 @@ def quick_spin():
         time.sleep(.04)
 
 def just_wait(): 
-    time.sleep(1.4)
+    time.sleep(1)
