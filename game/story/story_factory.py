@@ -1,5 +1,7 @@
-def generate():
-    return [{'type': 'monster',
+import random
+
+def generate(story_length=3):
+    library = [{'type': 'monster',
              'monster': {'name': 'Chupacabra',
                          'strength': 5}},
 
@@ -22,3 +24,5 @@ def generate():
             {'type': 'cave',
              'cave': {'greeting': 'You have arrived at the deepest darkest cave, DEATH cave. Will you enter?'}}
             ]
+
+    return random.sample(library, k=story_length)
