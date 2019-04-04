@@ -1,6 +1,8 @@
 # test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20}
 
 
+
+
 class Character:
     def __init__(self, character):
         '''
