@@ -1,8 +1,6 @@
 ##test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20, "inventory": []}
 
 
-
-
 class Character:
     def __init__(self, character):
         '''
@@ -16,7 +14,6 @@ class Character:
         self.constitution = character["constitution"]
         self.hitpoints = character["hitpoints"]
         self.inventory = character["inventory"]
-
 
     def print_character(self):
         '''
@@ -51,4 +48,3 @@ class Character:
 
 # adventurer = Character(create_character())
 # adventurer.print_character()
-
