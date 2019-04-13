@@ -9,7 +9,9 @@ def trophy(name, value):
 
 
 def npc(name, clazz):
-    return {'type': 'npc',
-            'npc': {'name': name,
-                    'npc_class': clazz,
-                    'greeting': f'Well hello there! My name is {name}. Can you help me??'}}
+    return {
+        'type': 'npc',
+        'npc': {
+            'name': name,
+            'npc_class': clazz,
+            'greeting': f'Well hello there! My name is {name}. Can you help me??'}}
