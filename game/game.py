@@ -7,11 +7,13 @@ import game.engine.wait as wait
 import game.character.character as character
 import game.progression.ability as ability
 import game.engine.step_engine as step_engine
+import game.sound as sound
 
 def play_step(step, hero):
     return step_engine.forType(step.get('type'))(step, hero)
 
 def start():
+    sound.play_music()
     welcome.show()
     hero = character_creator.new()
     hero.print_character()

@@ -12,6 +12,7 @@ pyfiglet = "*"
 colorama = "*"
 pyinquirer = "*"
 asciimatics = "*"
+pygame = "*"
 
 [requires]
 python_version = "3"
