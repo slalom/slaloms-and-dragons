@@ -35,7 +35,7 @@ def npc(step, hero):
 def mountain(step, hero):
     mtn = step.get('mountain')
     print(mtn["greeting"])
-    if not battle.even_rolls():
+    if not battle.even_rolls(hero):
         hero.die()
 
 def cave(step, hero):

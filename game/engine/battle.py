@@ -46,7 +46,7 @@ def threeRolls():
         return False
 
 
-def even_rolls():
+def even_rolls(hero):
     print("To get through mountain, you must roll even.")
     input('Hit [ENTER] to roll a die')
     roll = dice.roll()
