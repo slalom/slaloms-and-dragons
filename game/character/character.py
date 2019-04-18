@@ -1,4 +1,4 @@
-##test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20, "inventory": []}
+#test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20, "inventory": [], "level":0, "experience":560}
 
 
 class Character:
@@ -14,6 +14,8 @@ class Character:
         self.constitution = character["constitution"]
         self.hitpoints = character["hitpoints"]
         self.inventory = character["inventory"]
+        self.experience = character["experience"]
+        self.level = character["level"]
 
     def print_character(self):
         '''
@@ -29,6 +31,15 @@ class Character:
         print("Constitution:", self.constitution)
         print("Hitpoints:", self.hitpoints)
         print("inventory:", self.inventory)
+        print("Experience:", self.experience)
+        print("Level:", self.level)
+
+    def calc_level(self):
+        calc_level = self.experience // 100
+        if calc_level > self.level:
+            #self.level_up()
+            pass
+        self.level = calc_level
 
     def pickup(self, trophy):
         print('Sweet!')
@@ -51,9 +62,7 @@ class Character:
         string = "Class: Character\nCharacter Name: " + self.name
         return string
 
-# character = Character(test_character)
-# print("Character Name:", character.name)
-# print("Character race:", character.race)
+#character = Character(test_character)
+#character.calc_level()
+#character.print_character()
 
-# adventurer = Character(create_character())
-# adventurer.print_character()

@@ -25,5 +25,7 @@ def new():
     properties["constitution"] = random.randint(3, 18)
     properties["hitpoints"] = random.randint(3, 18)
     properties["inventory"] = ["5 coins", "1 sword", "3 health potions"]
+    properties["experience"] = 0
+    properties["level"] = 0
 
     return character.Character(properties)
