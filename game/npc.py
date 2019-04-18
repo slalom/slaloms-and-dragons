@@ -15,4 +15,3 @@ class npc:
             print('Wonderful!')
         else:
             print('whatevs.')
-        return True

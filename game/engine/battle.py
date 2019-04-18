@@ -14,12 +14,11 @@ def fight(hero, monster):
 
     if hero_score > monster_score:
         print(f'You defeated {monster["name"]}')
-        return True
     else:
         print(f'You were defeated by {monster["name"]}')
+        print(f'You loose {monster_score - hero_score} hitpoints')
+        hero.take_damage(monster_score - hero_score)
         wait.just_wait()
-        return False
-
 
 def threeRolls():
     roll_sum = 0
@@ -41,7 +40,6 @@ def threeRolls():
 
     if roll_sum >= 12:
         print('You have successfully crossed through DEATH cave.')
-        return True
     else:
         print('You were defeated by DEATH cave')
         wait.just_wait()
@@ -56,8 +54,7 @@ def even_rolls():
 
     if roll % 2 == 0:
         print('You have successfully climbed Zagros Montain.')
-        return True
     else:
         print('You were defeated by Zagros Mountain')
         wait.just_wait()
-        return False
+        hero.die()

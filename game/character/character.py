@@ -32,12 +32,20 @@ class Character:
 
     def pickup(self, trophy):
         print('Sweet!')
-        return True
 
     def add_inventory(self, item):
         self.inventory.append(item)
 
         # add to inventory
+
+    def take_damage(self, damage):
+        self.hitpoints -= damage
+    
+    def die(self):
+        self.hitpoints = 0
+
+    def is_alive(self):
+        return self.hitpoints > 0
 
     def __str__(self):
         string = "Class: Character\nCharacter Name: " + self.name

@@ -22,8 +22,8 @@ def start():
     
     for step in story:
         wait.step_wait()
-        result = play_step(step, hero)
-        if not result:
+        play_step(step, hero)
+        if not hero.is_alive():
             won = False
             break
     end.show(win=won)
