@@ -9,8 +9,10 @@ import game.progression.ability as ability
 import game.engine.step_engine as step_engine
 import game.sound as sound
 
+
 def play_step(step, hero):
     return step_engine.forType(step.get('type'))(step, hero)
+
 
 def start():
     sound.play_music()
@@ -21,7 +23,7 @@ def start():
 
     story = story_factory.generate()
     won = True
-    
+
     for step in story:
         wait.step_wait()
         play_step(step, hero)

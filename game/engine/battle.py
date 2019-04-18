@@ -20,6 +20,7 @@ def fight(hero, monster):
         hero.take_damage(monster_score - hero_score)
         wait.just_wait()
 
+
 def threeRolls():
     roll_sum = 0
     print("To get through DEATH cave you must roll 3 times and get 12 or more.")

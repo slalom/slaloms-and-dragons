@@ -40,7 +40,7 @@ class Character:
 
     def take_damage(self, damage):
         self.hitpoints -= damage
-    
+
     def die(self):
         self.hitpoints = 0
 

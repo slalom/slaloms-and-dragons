@@ -10,9 +10,6 @@ class map:
     def render(self):
         for i in range(len(self.matrix)):
             for j in range(len(self.matrix[i])):
-                #print(matrix[i][j])
+                # print(matrix[i][j])
                 print('.')
             print()
-        
-
-
