@@ -1,11 +1,10 @@
-class ability ():
-    def __init__(self, ID, name, description):
-        self.ID = ID
-        self.name = name
-        self.description = description
+import game.progression.power as Power
 
-    def GetName(self):
-        return self.name
 
-    def GetDescription(self):
-        return self.description
+def get_ability(character):
+    print('\n')
+    print('Lets see your powers', character.name, ":")
+    power = Power.power()
+    for power in power.GetPower():
+        print(power)
+    print()

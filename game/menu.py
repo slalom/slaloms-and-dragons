@@ -1,7 +1,13 @@
-import game.user_input as user_input
+import game.tools as tools
+
+menu = [
+    'New Game',
+    'Continue from where you left..',
+    'How to play?',
+    'Highscores',
+    'Top Player'
+]
 
 
 def ask_for_selection():
-    # show menu options (1. Start Game)
-    # ask for input
-    return user_input.get()
+    return tools.show_picker(menu)

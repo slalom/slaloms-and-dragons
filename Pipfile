@@ -10,6 +10,8 @@ autopep8 = "*"
 emoji = "*"
 pyfiglet = "*"
 colorama = "*"
+pyinquirer = "*"
+asciimatics = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3"
