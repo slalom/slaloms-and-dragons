@@ -1,5 +1,5 @@
 import game.engine.battle as battle
-import game.npc as npc
+import game.npc as npc_character
 
 def forType(step_type):
     if step_type == 'monster':
@@ -28,7 +28,7 @@ def trophy(step, hero):
 def npc(step, hero):
     npm_spec = step['npc']
     print('You see someone in the shadows...')
-    mary = npc.npc(npm_spec['name'], npm_spec['npc_class'],
+    mary = npc_character.npc(npm_spec['name'], npm_spec['npc_class'],
                    npm_spec['greeting'])
     return mary.meet()
 
