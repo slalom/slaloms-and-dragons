@@ -10,7 +10,7 @@ def new():
     properties["name"] = input("Please input your adventurer's name:")
 
     print('Select your race')
-    properties['race'] = tools.show_picker(['Human', 'Elf', 'Dwarf', 'Princess', 'Magician'])
+    properties['race'] = tools.show_picker(['Human', 'Elf', 'Dwarf', 'Princess', 'Magician','Peon'])
 
     print('Select your gender')
     properties['gender'] = tools.show_picker(['Male', 'Female', 'Other'])
