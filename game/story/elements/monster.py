@@ -1,7 +1,8 @@
 import random
 
-def generate():
-  return random.choice(__names)
+def build():
+    return {'type': 'monster', 'monster': {'name': random.choice(__names),
+                                           'strength': random.randint(1, 10)}}
 
 __names = ['Gremlin',
              'Davy Jones',
