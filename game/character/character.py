@@ -17,22 +17,17 @@ class Character:
         self.experience = character["experience"]
         self.level = character["level"]
 
-    def print_character(self):
-        '''
-        prints: character attributes
-        '''
-        print("Slalom & Dragons Character Information:")
-        print("---------------------------------------")
-        print("Name:", self.name)
-        print("Race:", self.race)
-        print("Gender:", self.gender)
-        print("Strength:", self.strength)
-        print("Dexterity:", self.dexterity)
-        print("Constitution:", self.constitution)
-        print("Hitpoints:", self.hitpoints)
-        print("inventory:", self.inventory)
-        print("Experience:", self.experience)
-        print("Level:", self.level)
+    def print_character(self, window):
+        window.addstr(f'Name: {self.name}\n')
+        window.addstr(f'Race: {self.race} \n')
+        window.addstr(f'Gender: {self.gender} \n')
+        window.addstr(f'Strength: {self.strength} \n')
+        window.addstr(f'Dexterity: {self.dexterity} \n')
+        window.addstr(f'Constitution: {self.constitution} \n')
+        window.addstr(f'Hitpoints: {self.hitpoints} \n')
+        window.addstr(f'Inventory: {self.inventory} \n')
+        window.addstr(f'Experience: {self.experience} \n')
+        window.addstr(f'Level: {self.level} \n')
 
     def calc_level(self):
         calc_level = self.experience // 100
@@ -56,8 +51,3 @@ class Character:
     def __str__(self):
         string = "Class: Character\nCharacter Name: " + self.name
         return string
-
-#character = Character(test_character)
-#character.calc_level()
-#character.print_character()
-

@@ -8,7 +8,7 @@ import game.story.elements.terrain.mountain as mountain
 
 
 def generate():
-    return map(20, 10)
+    return map(10, 10)
 
 
 __elements = {
