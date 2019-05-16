@@ -21,5 +21,5 @@ def generate(story_length=3):
     return random.sample(library, k=story_length)
 
 def generate_map():
-    b = map_model.map(10)
+    b = map_model.map(20, 50)
     b.render()
