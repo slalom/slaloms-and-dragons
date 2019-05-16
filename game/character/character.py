@@ -41,14 +41,8 @@ class Character:
             pass
         self.level = calc_level
 
-    def pickup(self, trophy):
-        print('Sweet!')
-
-    def add_inventory(self, item):
+    def pickup(self, item):
         self.inventory.append(item)
-        print("inventory:", self.inventory)
-
-        # add to inventory
 
     def take_damage(self, damage):
         self.hitpoints -= damage
