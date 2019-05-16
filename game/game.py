@@ -7,7 +7,7 @@ import game.engine.wait as wait
 import game.character.character as character
 import game.progression.ability as ability
 import game.engine.step_engine as step_engine
-import game.sound as sound
+
 
 
 def play_step(step, hero):
@@ -15,7 +15,6 @@ def play_step(step, hero):
 
 
 def start():
-    sound.play_music()
     welcome.show()
     story = story_factory.generate()
     hero = character_creator.new()

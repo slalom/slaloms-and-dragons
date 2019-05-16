@@ -2,9 +2,10 @@ import game.menu as menu
 import game.game as game
 import game.animations as animations
 import game.help as helper
+import game.sound as sound
 
+sound.play_music()
 animations.show_intro()
-
 selection = menu.ask_for_selection()
 
 if selection == 'New Game':
