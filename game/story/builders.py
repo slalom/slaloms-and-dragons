@@ -1,6 +1,9 @@
-def monster(name, strength):
-    return {'type': 'monster', 'monster': {'name': name,
-                                           'strength': strength}}
+import game.story.monster.name as monster_names
+import random
+
+def monster():
+    return {'type': 'monster', 'monster': {'name': monster_names.generate(),
+                                           'strength': random.randint(1, 10)}}
 
 
 def trophy(name, value):

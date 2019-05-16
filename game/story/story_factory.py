@@ -4,7 +4,7 @@ import game.map as map_model
 
 def generate(story_length=3):
     library = [
-        builders.monster('Chupacabra', 5),
+        builders.monster(),
         builders.trophy('The Sword of Damocles', 10),
         builders.npc('Mary', 'human'),
 
@@ -22,4 +22,4 @@ def generate(story_length=3):
 
 def generate_map():
     b = map_model.map(20, 50)
-    b.render()
+#     b.render()
