@@ -26,7 +26,8 @@ def trophy(step, hero):
     trophy = step['trophy']
     print(
         f'You found something! Ahhh! It is the {trophy["name"]}!')
-    return hero.pickup(trophy)
+    hero.pickup(trophy)
+    return hero.add_inventory(trophy["name"])
 
 
 def npc(step, hero):
