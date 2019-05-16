@@ -46,6 +46,7 @@ class Character:
 
     def add_inventory(self, item):
         self.inventory.append(item)
+        print("inventory:", self.inventory)
 
         # add to inventory
 
