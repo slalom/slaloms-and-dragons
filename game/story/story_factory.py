@@ -1,6 +1,6 @@
 import random
 import game.story.builders as builders
-
+import game.map as map_model
 
 def generate(story_length=3):
     library = [
@@ -16,4 +16,10 @@ def generate(story_length=3):
          'cave': {'greeting': 'You have arrived at the deepest darkest cave, DEATH cave. Will you enter?'}}
     ]
 
+    generate_map()
+
     return random.sample(library, k=story_length)
+
+def generate_map():
+    b = map_model.map(10)
+    b.render()

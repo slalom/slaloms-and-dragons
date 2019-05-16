@@ -17,11 +17,11 @@ def play_step(step, hero):
 def start():
     sound.play_music()
     welcome.show()
+    story = story_factory.generate()
     hero = character_creator.new()
     hero.print_character()
     ability_track = ability.get_ability(hero)
 
-    story = story_factory.generate()
     won = True
 
     for step in story:
