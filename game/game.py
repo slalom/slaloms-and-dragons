@@ -31,7 +31,7 @@ def loop(stdscr, map, hero):
     map_window = stdscr.derwin(15, 25, 1, 1)
     map_window.keypad(True)
     character_window = stdscr.derwin(15, 60, 1, 28)
-    text_window = stdscr.derwin(5, 60, 16, 28)
+    text_window = stdscr.derwin(15, 60, 16, 28)
     stdscr.vline(1,27,'|', 15)
 
     map.render(map_window)
