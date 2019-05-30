@@ -25,7 +25,9 @@ class Character:
         window.addstr(f'Dexterity: {self.dexterity} \n')
         window.addstr(f'Constitution: {self.constitution} \n')
         window.addstr(f'Hitpoints: {self.hitpoints} \n')
-        window.addstr(f'Inventory: {self.inventory} \n')
+        inv = self.inventory[0] 
+        for i in self.inventory[1:]: inv += ', '+i
+        window.addstr(f'Inventory: {inv} \n')
         window.addstr(f'Experience: {self.experience} \n')
         window.addstr(f'Level: {self.level} \n')
 
