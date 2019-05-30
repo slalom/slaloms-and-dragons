@@ -37,28 +37,40 @@ class map:
         self.y_dim = y_dim
         self.model = [[add_cell() for x in range(x_dim)] for y in range(y_dim)]
         self.hero_position = (0, 0)
+        self.model[self.hero_position[1]][self.hero_position[0]] = self.__traversed_cell()
+
+    def __traversed_cell(self):
+        return {'type':'empty', 'view': '🐾'}
 
     def move_hero(self, direction):
         if direction == curses.KEY_LEFT:
             new_x = self.hero_position[0] - 1
             if 0 <= new_x < self.x_dim:
                 self.hero_position = (new_x, self.hero_position[1])
-                return self.model[self.hero_position[1]][self.hero_position[0]]
+                temporary_cell = self.model[self.hero_position[1]][self.hero_position[0]]
+                self.model[self.hero_position[1]][self.hero_position[0]] = self.__traversed_cell()
+                return temporary_cell
         elif direction == curses.KEY_RIGHT:
             new_x = self.hero_position[0] + 1
             if 0 <= new_x < self.x_dim:
                 self.hero_position = (new_x, self.hero_position[1])
-                return self.model[self.hero_position[1]][self.hero_position[0]]
+                temporary_cell = self.model[self.hero_position[1]][self.hero_position[0]]
+                self.model[self.hero_position[1]][self.hero_position[0]] = self.__traversed_cell()
+                return temporary_cell
         elif direction == curses.KEY_UP:
             new_y = self.hero_position[1] - 1
             if 0 <= new_y < self.y_dim:
                 self.hero_position = (self.hero_position[0], new_y)
-                return self.model[self.hero_position[1]][self.hero_position[0]]
+                temporary_cell = self.model[self.hero_position[1]][self.hero_position[0]]
+                self.model[self.hero_position[1]][self.hero_position[0]] = self.__traversed_cell()
+                return temporary_cell
         elif direction == curses.KEY_DOWN:
             new_y = self.hero_position[1] + 1
             if 0 <= new_y < self.y_dim:
                 self.hero_position = (self.hero_position[0], new_y)
-                return self.model[self.hero_position[1]][self.hero_position[0]]
+                temporary_cell = self.model[self.hero_position[1]][self.hero_position[0]]
+                self.model[self.hero_position[1]][self.hero_position[0]] = self.__traversed_cell()
+                return temporary_cell
 
     def render(self, stdscr):
         for row_num, row in enumerate(self.model):
