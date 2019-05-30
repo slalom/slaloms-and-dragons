@@ -39,8 +39,9 @@ class Character:
     def pickup(self, item):
         if item["name"] not in self.inventory: 
             self.inventory.append(item["name"])
+            return '' 
         else: 
-            print("Unfortunately you already have {}".format(item["name"]))
+            return f'\n... Unfortunately you already have {item["name"]}.'
 
     def take_damage(self, damage):
         self.hitpoints -= damage

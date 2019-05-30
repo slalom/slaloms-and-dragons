@@ -25,7 +25,8 @@ def monster(step, hero, stdscr):
 def loot(step, hero, stdscr):
     item = step['loot']
     stdscr.addstr(f'You found something! Ahhh! It is the {item["name"]}!')
-    hero.pickup(item)
+    outstr = hero.pickup(item)
+    stdscr.addstr(outstr)
 
 def npc(step, hero, stdscr):
     npm_spec = step['npc']
