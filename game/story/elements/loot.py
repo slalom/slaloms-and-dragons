@@ -8,4 +8,4 @@ def build():
             'view': '💰 '}
 
 
-__names = ['The Sword of Damocles']
+__names = ['The Sword of Damocles'] 

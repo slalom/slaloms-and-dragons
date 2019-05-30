@@ -37,7 +37,8 @@ class Character:
         self.level = calc_level
 
     def pickup(self, item):
-        self.inventory.append(item)
+        if item["name"] not in self.inventory: 
+            self.inventory.append(item["name"])
 
     def take_damage(self, damage):
         self.hitpoints -= damage

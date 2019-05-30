@@ -26,7 +26,7 @@ def start():
     end.show(win=False)
 
 
-def loop(stdscr, map, hero):
+def loop(stdscr, map, hero): 
     locale.setlocale(locale.LC_ALL, '')
     map_window = stdscr.derwin(15, 25, 1, 1)
     map_window.keypad(True)
