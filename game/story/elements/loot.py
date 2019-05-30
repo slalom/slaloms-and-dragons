@@ -8,4 +8,9 @@ def build():
             'view': '💰'}
 
 
-__names = ['The Sword of Damocles'] 
+__names = ['The Sword of Damocles', 
+           'Dragon Scales', 
+           'Invisibility Cloak', 
+           'Gold Doubloons', 
+           'Chain Mail', 
+           'Iron Mace'] 
