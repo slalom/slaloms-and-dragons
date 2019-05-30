@@ -9,7 +9,8 @@ def build():
             'name': name,
             'npc_class': 'human',
             'greeting': f'Well hello there! My name is {name}. Can you help me??'},
-        'view': '🙋‍'}
+        # 'view': '🙋‍'}
+        'view': '👸'}
 
 
 __names = ['Mary']
