@@ -17,7 +17,7 @@ def fight(hero, monster, stdscr):
         stdscr.addstr(f'You defeated {monster["name"]}')
     else:
         stdscr.addstr(f'You were defeated by {monster["name"]}')
-        stdscr.addstr(f'You loose {monster_score - hero_score} hitpoints')
+        stdscr.addstr(f'You lose {monster_score - hero_score} hitpoints')
         hero.take_damage(monster_score - hero_score)
         wait.just_wait()
 
