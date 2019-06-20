@@ -15,9 +15,9 @@
 `make test`
 
 ### Styling
-using `autopep8` (https://pypi.org/project/autopep8/) to automatically format Python code to conform to the PEP 8 style guide. 
+using `black` (https://github.com/python/black) to automatically format Python code. 
 
-Run `make lint`  to conform to the PEP 8 style guide.
+Run `make lint`  format python code.
 
 
 ### Troubleshooting
