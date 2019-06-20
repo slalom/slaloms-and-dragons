@@ -14,8 +14,8 @@ import game.engine.step_engine as step_engine
 
 def play_step(step, hero, stdscr):
     stdscr.refresh()
-    if step and step['type'] != 'empty':
-        step_engine.forType(step.get('type'))(step, hero, stdscr)
+    if step and step["type"] != "empty":
+        step_engine.forType(step.get("type"))(step, hero, stdscr)
 
 
 def start():
@@ -26,13 +26,13 @@ def start():
     end.show(win=False)
 
 
-def loop(stdscr, map, hero): 
-    locale.setlocale(locale.LC_ALL, '')
+def loop(stdscr, map, hero):
+    locale.setlocale(locale.LC_ALL, "")
     map_window = stdscr.derwin(15, 25, 1, 1)
     map_window.keypad(True)
     character_window = stdscr.derwin(15, 60, 1, 28)
     text_window = stdscr.derwin(15, 60, 16, 28)
-    stdscr.vline(1,27,'|', 15)
+    stdscr.vline(1, 27, "|", 15)
 
     map.render(map_window)
     while hero.is_alive():

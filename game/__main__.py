@@ -8,9 +8,9 @@ sound.play_music()
 animations.show_intro()
 selection = menu.ask_for_selection()
 
-if selection == 'New Game':
+if selection == "New Game":
     game.start()
-elif selection == 'How to play?':
+elif selection == "How to play?":
     helper.guide()
 else:
-    print('Beep boop')
+    print("Beep boop")

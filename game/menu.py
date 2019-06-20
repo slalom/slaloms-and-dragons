@@ -1,11 +1,11 @@
 import game.tools as tools
 
 menu = [
-    'New Game',
-    'Continue from where you left..',
-    'How to play?',
-    'Highscores',
-    'Top Player'
+    "New Game",
+    "Continue from where you left..",
+    "How to play?",
+    "Highscores",
+    "Top Player",
 ]
 
 
