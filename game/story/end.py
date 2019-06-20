@@ -7,17 +7,17 @@ import time
 
 def show(win=True):
     if win:
-        print('\n🔥🔥 You Win 🔥🔥')
+        print("\n🔥🔥 You Win 🔥🔥")
     else:
         color = Fore.RED
         font_bold = Style.BRIGHT
-        death = 'AAAAAAAAAAHAHHHHHHHHHAHAAARRRRRRRRRRRRRGRRGGGGGGGGRHHHHHHHHHHHH'
+        death = "AAAAAAAAAAHAHHHHHHHHHAHAAARRRRRRRRRRRRRGRRGGGGGGGGRHHHHHHHHHHHH"
         animation = emoji.emojize(color + font_bold + death)
         for i in animation:
             time.sleep(0.05)
             sys.stdout.write(i)
             sys.stdout.flush()
-        print('\n')
+        print("\n")
         print(Style.RESET_ALL)
 
         game_over.play_game_over()

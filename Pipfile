@@ -6,13 +6,13 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-autopep8 = "*"
 emoji = "*"
 pyfiglet = "*"
 colorama = "*"
 pyinquirer = "*"
 asciimatics = "*"
 pygame = "*"
+black = "*"
 
 [requires]
-python_version = "3"
+python_version = "3.7"

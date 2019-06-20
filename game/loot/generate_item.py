@@ -1,26 +1,27 @@
 from item import Item
 import random
 
-names = ['Sword', 'Axe', 'Dagger', 'Wand', 'Bow', 'Shield']
-qualities = ['Common', 'Uncommon', 'Rare', 'Epic', 'Legendary']
+names = ["Sword", "Axe", "Dagger", "Wand", "Bow", "Shield"]
+qualities = ["Common", "Uncommon", "Rare", "Epic", "Legendary"]
 
 
 def generate_random_item():
     name = random.choice(names)
     quality = random.choice(qualities)
     # item_type = "Weapon"
-    if name == 'Shield':
-        item_type = 'Armor'
+    if name == "Shield":
+        item_type = "Armor"
     else:
-        item_type = 'Weapon'
+        item_type = "Weapon"
 
-    if name == 'Shield':
+    if name == "Shield":
         modifier = "+5 to Constitution"
     else:
         modifier = "+5 to Strength"
 
     item = Item(name, quality, item_type, modifier)
     return item
+
 
 # Tests
 

@@ -1,11 +1,11 @@
-#test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20, "inventory": [], "level":0, "experience":560}
+# test_character = {"name":"Slalom", "race":"Elf", "gender":"female", "strength":10, "dexterity":10, "constitution":10, "hitpoints":20, "inventory": [], "level":0, "experience":560}
 
 
 class Character:
     def __init__(self, character):
-        '''
+        """
         character: dictionary passed from create_character function
-        '''
+        """
         self.name = character["name"]
         self.race = character["race"]
         self.gender = character["gender"]
@@ -18,31 +18,32 @@ class Character:
         self.level = character["level"]
 
     def print_character(self, window):
-        window.addstr(f'Name: {self.name}\n')
-        window.addstr(f'Race: {self.race} \n')
-        window.addstr(f'Gender: {self.gender} \n')
-        window.addstr(f'Strength: {self.strength} \n')
-        window.addstr(f'Dexterity: {self.dexterity} \n')
-        window.addstr(f'Constitution: {self.constitution} \n')
-        window.addstr(f'Hitpoints: {self.hitpoints} \n')
-        inv = self.inventory[0] 
-        for i in self.inventory[1:]: inv += ', '+i
-        window.addstr(f'Inventory: {inv} \n')
-        window.addstr(f'Experience: {self.experience} \n')
-        window.addstr(f'Level: {self.level} \n')
+        window.addstr(f"Name: {self.name}\n")
+        window.addstr(f"Race: {self.race} \n")
+        window.addstr(f"Gender: {self.gender} \n")
+        window.addstr(f"Strength: {self.strength} \n")
+        window.addstr(f"Dexterity: {self.dexterity} \n")
+        window.addstr(f"Constitution: {self.constitution} \n")
+        window.addstr(f"Hitpoints: {self.hitpoints} \n")
+        inv = self.inventory[0]
+        for i in self.inventory[1:]:
+            inv += ", " + i
+        window.addstr(f"Inventory: {inv} \n")
+        window.addstr(f"Experience: {self.experience} \n")
+        window.addstr(f"Level: {self.level} \n")
 
     def calc_level(self):
         calc_level = self.experience // 100
         if calc_level > self.level:
-            #self.level_up()
+            # self.level_up()
             pass
         self.level = calc_level
 
     def pickup(self, item):
-        if item["name"] not in self.inventory: 
+        if item["name"] not in self.inventory:
             self.inventory.append(item["name"])
-            return '' 
-        else: 
+            return ""
+        else:
             return f'\n... Unfortunately you already have {item["name"]}.'
 
     def take_damage(self, damage):
