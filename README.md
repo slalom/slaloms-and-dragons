@@ -1,4 +1,8 @@
-![alt text](https://github.com/slalom/slaloms-and-dragons/blob/master/logo.png)
+![alt text](logo.png)
+
+### Screenshots
+
+![fight](screenshot.png)
 
 ### Prereqs
 
